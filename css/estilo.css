@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 13px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.textos {
+    text-align: justify;
+    font-size: 20px;
+    color: goldenrod;
+}
+
+h1 {
+    color: burlywood;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    border: 1px solid black;
+    text-align: center;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+iframe {
+    text-align: justify;
+}
+
+header {
+    background-image: url("../img/Hernan\ Cattaneo\ Logo");
+    size: 100px;
+}
+
+/*FLEXBOX*/
+
+.estiloFlexx {
+    background-color: coral;
+    border: 4px black solid;
+    width: 800px;
+    height: 600px;
+    border-radius: 4px;
+    margin: auto;
+
+    /*Aplicamos las propiedade de Flexbox en el contenedor padre*/
+    display: flex;
+
+    /*Flex direction me permite indicar en que direccion se acomodan mis hijos*/
+    /*Por deafault viene en direccion Row (fila)*/
+    /*Flex wrap: me permite decirle al sistema que los elementos sean multilineas*/
+
+    /* flex-wrap: wrap; */
+
+    /*Flex flow es una forma abreviada de las ultimas dos propiedades*/
+
+    /*  flex-flow: column wrap; */
+
+    /*JUSTIFY CONTENT*/
+    /*Si flex direction es ROW ordeno en el eje horizontal*/
+    justify-content: space-evenly;
+
+    /*ALING ITEMS*/
+    /*Si flex direction es ROW ordeno en el eje horizontal*/
+
+    align-items: center;
+
+    /*Trabajamos con los items hijos*/
+}
+
+.hijoFlex {
+    background-color: slategrey;
+    height: 150px;
+    width: 150px;
+    border: 1px black dotted;
+    border-radius: 4px;
+}
+
+.hijoFlex p {
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*GRID*/
+/*APLICANDO ESTILO*/
+
+.item {
+    background-color: burlywood;
+    border: 1px black solid;
+}
+
+.item p {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*CONTENEDOR PADRE*/
+
+.gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*fr es una unidad de medida que utilizamos en GRID*/
+    /*podemos colocar cualquier unidad de medida*/
+    /*repeat() = repite una configuracion, ejemplo repeat (6, 1fr)*/
+}
+
+.cajass {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+/*...........GRADIENTES.............*/
+/*son fondos en degrade*/
+/*Pueden ser lineales o gradiales*/
+
+.A {
+    background: linear-gradient(to right, #F2994A, #F2C94C)
+}
+
+.B {
+    background-image: radial-gradient(#F2994A, #F2C94C);
+}
+
+.C {
+    background: linear-gradient(to left, #F2994A, #F2C94C);
+}
+
+/*Transformaciones*/
+/*Una transformacion es la forma en la que se ve un elemento.
+Todo elemento transformado por CSS cambia la forma en la que se ve pero no el lugar que ocupa*/
+
+/*TRASLADAR UN ELEMENTO*/
+
+.TourA {
+    background-color: burlywood;
+    transform: perspective(10px, 15px);
+    transform: scale(1, 0.5);
+}
+.TourB {
+    background-color:#F2994A;
+    transform: scale(1, 0.5);
+}
+.TourC {
+    background-color: #F2C94C;
+    transform: scale(1, 0.5);
+}
